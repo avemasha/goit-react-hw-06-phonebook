@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { addContacts } from '../store/slice';
+import { addContacts } from '../store/contactsSlice';
 import { Formik } from 'formik';
 
 import { Input, Forma, Label, Button, ErMessage } from './PhonebookForm.styled';

@@ -31,7 +31,7 @@ export const ContactsList = () => {
   return (
     <List>
       {visibleContacts.map(state => {
-        console.log(state);
+        
         return (
           <ContactItem
             name={state.text.name}
