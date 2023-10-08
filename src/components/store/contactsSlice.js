@@ -30,6 +30,7 @@ const contactsSlice = createSlice({
   initialState: contactInitialState,
   reducers: {
     addContacts: {
+      
       reducer(state, action) {
         state.contacts.push(action.payload);
       },
