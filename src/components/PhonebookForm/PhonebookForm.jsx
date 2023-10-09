@@ -18,7 +18,7 @@ export const PhonebookForm = () => {
 
 
   const handleSubmit = (values, { resetForm }) => {
-    const isContactExists = contacts.some(contact => contact.text.name === values.name);
+    const isContactExists = contacts.some(contact => contact.text.name.toLowerCase() === values.name.toLowerCase());
     
     if(isContactExists){
      return Notify.failure('Oops, this contact already exists.')
